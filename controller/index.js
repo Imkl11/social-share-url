@@ -4,14 +4,6 @@ exports.getShareImagePage = (req, res) => {
     const title = "Profit & Loss Card";
     const description = "Check out my profit and loss summary!";
 
-    const userAgent = req.headers['user-agent']?.toLowerCase();
-    const isBot = /facebook|twitter|linkedin|discord|whatsapp|telegram|bot|crawler|spider|slack/.test(userAgent);
-
-    if (!isBot) {
-        // Redirect normal users directly to the image
-        return res.redirect(imageUrl);
-    }
-    
     const html = `
     <!DOCTYPE html>
     <html lang="en">
