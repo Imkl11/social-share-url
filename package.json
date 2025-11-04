@@ -1,0 +1,15 @@
+{
+  "name": "social-share",
+  "version": "1.0.0",
+  "description": "social-share-server-side",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "kamal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
