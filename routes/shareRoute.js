@@ -1,8 +1,8 @@
 const express = require('express');
-const { getShareImagePage } = require('../controller');
+const { getShareImagePage } = require('../controller/shareController');
 
 const router = express.Router();
 
-router.route('/share/*').get(getShareImagePage);
+router.route('/share/:path(*)').get(getShareImagePage);
 
 module.exports = router
